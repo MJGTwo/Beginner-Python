@@ -23,3 +23,16 @@ def add(x,y):
  * `answer` gets the value of the summation of `x+y`. This is also known as `answer` is *assigned* the value of the summation of `x+y`.
 * `return answer`
  * `return` is another *keyword* (a word that has a special purpose in a language) like `:`. It means that the output of the function `add` is what follows it. In this case, the output is `answer`.
+
+ With what we know now, we know the function takes in two values, `x` and `y`; adds `x` and `y` and assigns the value to `answer`; and returns `answer` as the output.
+
+ Here is the code again:
+
+```python
+def add(x,y):
+  answer = x + y
+  return answer
+print add(1,2)
+```
+
+On the first three lines we have *defined* our function and on line 4 we are *calling* the function. Calling a function means that we are using the function to do a task. `print add(1,2)` has Python `print` the `return` value of `add(1,2)`, which is `3`.
