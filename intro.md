@@ -27,4 +27,5 @@ Let's get started. Below is a Table of Content:
  * [Getting an IDE](/Users/michaelgardner/MEGA/Programming/teaching/setup/ide.md)
 * [What is Computer Science?](/Users/michaelgardner/MEGA/Programming/teaching/whatisCS.md)
 * [Back to Math Class](/Users/michaelgardner/MEGA/Programming/teaching/math/math.md)
+* [Types of Data](//Users/michaelgardner/MEGA/Programming/teaching/math/data.md)
 * [*Function*ing with Python](/Users/michaelgardner/MEGA/Programming/teaching/functions/functions.md)
