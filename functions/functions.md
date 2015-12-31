@@ -36,3 +36,31 @@ print add(1,2)
 ```
 
 On the first three lines we have *defined* our function and on line 4 we are *calling* the function. Calling a function means that we are using the function to do a task. `print add(1,2)` has Python `print` the `return` value of `add(1,2)`, which is `3`.
+
+Let's make another one:
+
+```python
+def mult(x,y):
+  return x*y
+```
+
+This one is slightly different. It's different because I did not create an `answer` variable to save what I have done. Instead of that, I can just return the result of `x*y`. Also, I can reuse `x` and `y` in this function. This will be fully explained later, but the point is that these are variables that are being used inside `add` or `mult` not both. Let's continue:
+
+```python
+def f(x):
+  return add(mult(2,x),4)
+print f(4)
+```
+
+To come full circle, we have made a function `f(x)` that returns the summation of twice x and 4. To add to what we can do, we can not only call a function inside another function like we are doing with `add`, we are calling the function `mult` as an argument inside the function `add`.
+
+The purpose of showing these different ways of building functions is to show you the tools to mix and match the code to your purpose. I could have defined `f` as the following:
+
+```python
+def f(x):
+  product = mult(2,x)
+  summation = add(product,4)
+  return summation
+```
+
+This definition is does the exact same thing as the first one; it does not matter.
