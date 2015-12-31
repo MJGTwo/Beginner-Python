@@ -63,4 +63,43 @@ def f(x):
   return summation
 ```
 
-This definition is does the exact same thing as the first one; it does not matter.
+This definition is does the exact same thing as the first one; it does not matter. Functions can have variables or no variables. They could call functions inside of them or not call them.
+
+### Some common mistakes
+
+The following code are consider errors and will not work well.
+
+``` python
+
+print foo(5)
+
+def foo(x):
+  return -1*x
+
+```
+
+This does not work because Python reads a file from top to bottom. If you call a function before defining it, Python will throw an syntax error. You need to switch the order of them.
+
+``` python
+def foo(x):
+
+  def bar(y):
+    z = x + y
+    return z
+  print bar(2)
+
+foo(5)
+```
+
+This defines a function called `foo` which defines another function called `bar` inside of it. This does not work and will cause Python to throw a syntax error. If you want to call a function inside another function, you must define the one used inside the order first. In this case, you need to define bar first, and then define foo. A second syntax error is that the function `bar` uses the variable `x`, but `x` is not defined inside function `bar`. This might not be easily understandable because the `x` variable is typed twice within four lines and you'd think that you could use it. To make sure it's understood, I will rewrite the correct code.
+
+```python
+def bar(x,y):
+  z = x + y
+  return z
+def foo(x):
+  print bar(2,x)
+foo(5)
+```
+
+This does what the code before possibly means but there are no errors.
