@@ -80,4 +80,17 @@ Here is some code:
 word = "na"
 print word * 16, "BATMAN!"
 ```
-prints `nananananananananananananananana BATMAN!` because word is added 
+prints `nananananananananananananananana BATMAN!`.
+
+If you have a string and multiple it by a int, it will appear that many times. It can be saved or printed.
+
+Now what would happen if I do the following:
+
+``` python
+word = "what about this?"
+print word + 2
+print word + '1'
+print word * 4.5
+```
+
+Will any of these work?
