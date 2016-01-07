@@ -72,6 +72,24 @@ print "Hello,","world!"
 ```
 still gives us "Hello, world!" because a comma is equal to `+' '+`in Python.
 
+### "Hello" " world" "?"
+
+You can print strings by doing
+
+```python
+print "Hello, " "world"
+```
+without a comma or a plus. I do not usually do this because it's difficult to "nothing" as an operation between two strings.
+
+It also implies that you could do this
+
+```python
+st1 = "Hello, "
+st2 = "world"
+print st1 st2
+```
+would also display "Hello, world" but this actually causes an error.
+
 ## Math + Strings = ?
 
 Here is some code:
@@ -94,3 +112,34 @@ print word * 4.5
 ```
 
 Will any of these work?
+
+## len() function
+
+The len function is used for finding the length of things (objects) in Python. Strings are multiple items together, so if you do `len("hello")` it will return 5.
+
+## int(), float(), str()
+
+It might be useful to change between different [datatypes](/Users/michaelgardner/MEGA/Programming/teaching/data/data.md) in Python. If you have `2` and you want `2.0`, you wrap the `2` with `float()` like this: `float(2)`.
+
+If you are using `raw_input()` to ask the user for some information, you might want to use int() or float().
+
+``` python
+num = raw_input("How many apples did you eat today? ")
+
+print (num/2)
+```
+
+Would not work because the datatype of num is a string, even though you asked for a number from the user. To fix this we do the following:
+
+``` python
+num = raw_input("Marty what year is it?")
+
+print (int(num)/2)
+```
+or
+``` python
+num = int(raw_input("Really, what is the year?"))
+print num + 23
+```
+
+There are many ways to do the same thing in Python.
