@@ -11,6 +11,7 @@ print "cat" == "dog"
 
 `False`
 
+`True` and `False` are the only two values in the datatype Boolean. Most people call it "bool". They can be saved to a variable like any other datatype. 
 Less than and greater than are pretty easy:
 
 ```py
@@ -53,3 +54,15 @@ I'm sure `1 < 3.2` makes sense, because you are comparing a number to another nu
 When we have a list of name, we like to have an order to it. Reverse alphabetical by last name was a favorite in my geometry class. In alphabetical ordering, A comes first following by B followed by C and so on. One could say A is less than B if they have numerical values. Actually that is true. For the comparison `"apple" < "cat"`, Python returns `True`.
 
 In fact, all the comparisons with strings above work and will not throw an error. This goes back to datatypes and how everything is stored as binary in memory. When ASCII was made, there was logic to the binary assigned allowing them to have the fact that `"a" < "b"` evaluate to `True` work.
+
+### !
+
+The not character, `!`, allows you to do the opposite of your result.
+
+```py
+print !(1 <2)
+
+```
+`False`
+
+This is useful when you are trying to say when a certain thing does not happen.
