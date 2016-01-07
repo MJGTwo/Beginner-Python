@@ -23,7 +23,7 @@ Note: The line (____) isn't there in programming, I have it there to show you wh
 
 Let's break down what is going on.
 * \t
- * This tells Python to insert a tab character into the string. Tab characters used for formatting a string (making it look pretty). It's purpose is to add 4 white spaces, however it can add less. Here is an example of "\t1\t2" against "\t\t2"
+ * This tells Python to insert a tab character into the string. Tab characters used for formatting a string (making it look pretty). It's purpose is to add 4 white spaces, however it can add less. Here is an example of `"\t1\t2"` against `"\t\t2"`
 
  `____1___2`
 
@@ -34,11 +34,11 @@ Let's break down what is going on.
  * This tells Python to insert a single quote mark and to not end the string.
 * \"
  * This tells Python to insert a double quote mark and to not end the string.
-* \n
+* `\n`
  * This is the newline character. It tells Python to rest everything that follows it on a new line below the current line.
 * \\\\
  * This tells Python to insert a backslash into the string. This is needed if you are trying to end a string with a backslash, like "this\", in Python. You need to use \\ or an error will occur.
-* \x21
+* `\x21`
  * This is for a hexadecimal value. These are not used very much in beginner Python but it's good to go over. If I type `print "\x21"` into Python, the terminal will print out `!` because 21 is the hexadecimal value, 00100001 in binary and 33 in decimal, of `!` in ASCII.
 
 Each of these symbols (most notably the sing and double quote marks) have special features by default and you must _escape_ that feature when you want to use it as a _literal_ symbol, so when you use the backslash, you are __escaping__ the character and using it as a __literal__
