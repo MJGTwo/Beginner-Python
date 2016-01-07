@@ -103,3 +103,7 @@ foo(5)
 ```
 
 This does what the code before possibly means but there are no errors.
+
+### Methods
+
+In the Computer Science community there are different names for different things. In the language C, you have functions. In C++, you have functions. In Python, you have functions. In Java, you have methods. If you hear someone call a function a method, they mean function.
