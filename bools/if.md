@@ -106,3 +106,61 @@ If your color is `blue`, it will print `Blue is my favorite color too!`. If it i
 ## Putting everything together
 
 You can put all of these together if you want:
+
+```py
+town = raw_input("Where were you born?")
+town = town.lower()
+if (town=="toledo"):
+  print "I went to MV for school there, did you?"
+elif (town=="findlay"):
+  print "I was born there too!"
+elif (town =="bowling green" or town == "bg"):
+  print "I know people there."
+else:
+  print "I don't know where that is."
+```
+
+Notice that this has all three (`if`, `elif`, and `else`) and two `elif`'s. The idea here is that the `else` will only be printed if all of the other if-statement conditions are `False`.
+
+### Nesting if statements
+
+Read this program:
+
+```py
+print "I'll tell you if the year you enter is a leap year."
+year = int(raw_input("Enter a year: "))
+print
+print year,
+if(year %4==0):
+  if (year %100 == 0):
+    if (year % 400 ==0):
+      print "is a leap year."
+    else:
+      print "is not a leap year."
+  else:
+    print "is a leap year."
+else:
+  print "is not a leap year."
+```
+
+Take your time. Try to understand it before moving on.
+
+When you have another if statement inside an if statement like above, it means that it will be testing those if the one outside of it is true. E.a. the statement `year % 100 ==0` will only be tested if `year %4 ==0` is `True`. This can be very useful for cases like finding a year is a leap year.
+
+However, we could rearrange the tests to get a more efficient program that gives us the same answer:
+
+```py
+print "I'll tell you if the year you enter is a leap year."
+year = int(raw_input("Enter a year: "))
+print
+print year,
+if year % 400 ==0:
+  print "is a leap year"
+elif year % 100 ==0:
+  print "is not a leap year"
+elif year % 4 == 0:
+  print "is a leap year"
+else:
+  print "is not a leap year"
+```
+This program gives us the same result as the previous one. In my eyes, neither program is better. The first one is better because it reads better to understand the rules of a leap year, this is known as readability. The second one is better because it is less complex, this is known as Occam's Razor. In programming, the less lines the better. Which approach depends on which you want to go with. 
