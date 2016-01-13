@@ -163,4 +163,4 @@ elif year % 4 == 0:
 else:
   print "is not a leap year"
 ```
-This program gives us the same result as the previous one. In my eyes, neither program is better. The first one is better because it reads better to understand the rules of a leap year, this is known as readability. The second one is better because it is less complex, this is known as Occam's Razor. In programming, the less lines the better. Which approach depends on which you want to go with. 
+This program gives us the same result as the previous one. In my eyes, neither program is better. The first one is better because it reads better to understand the rules of a leap year, this is known as readability. The second one is better because it is less complex, this is known as Occam's Razor. In programming, the less lines the better. Which approach depends on which you want to go with.
