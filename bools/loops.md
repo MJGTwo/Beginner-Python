@@ -122,4 +122,87 @@ Bye!
 
 ## For loops
 
-There are two types of loops. `While` loops and `for` loops. They are 
+There are two types of loops. `While` loops and `for` loops. When you are beginning to program, some ask "which loop should I use?" For most cases, it does not matter. If you are doing something until a certain condition is met, you need a `while` loop. If you are doing something a certain number of times, a `for` loop is needed. After a certain point, most things you program can do either of this.
+
+```py
+for item in group:
+  do_task_with(item)
+```
+
+A for loop means this: `for` every `item` in a `group` of items, do a task.
+
+```py
+x=0
+while x < 5:
+  print x
+  x+=1
+
+for x in range(5):
+  print x
+```
+
+Both loops do the same thing:
+
+```
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+```
+
+### range(int)
+
+The function `range(int)` is a function that gives you a group (a list) of numbers from `0` up until the `number` you entered. If you say `print range(4)`, it will output `[0,1,2,3]`. The reason it starts at zero is because computer count from zero, so when it stops at `3` you have `4` numbers in your list.
+
+### Examples
+
+For loops are good with creating numbers. Here is nested `for` loops. You can do this with `while` loops but programmers tend to write lines like this:
+
+```py
+for i in range(5):
+  for j in range(5):
+    print "("+str(j)+","+str(i)+")", #I want the format (j,i)
+  print
+
+```
+
+This will create a grid of numbers. Remember that they are being printed in a pattern of (i,j). Once the `for` loop with the `j` has finished, a newline is entered and the `for` loop starts again.
+
+```
+(0,0) (1,0) (2,0) (3,0) (4,0)
+(0,1) (1,1) (2,1) (3,1) (4,1)
+(0,2) (1,2) (2,2) (3,2) (4,2)
+(0,3) (1,3) (2,3) (3,3) (4,3)
+(0,4) (1,4) (2,4) (3,4) (4,4)
+```
+
+This could be used for coordinates in math, places in a game, or comparing values. Here is a something with lists:
+
+```py
+colors = list()
+flag = True;
+colors.append("blue")
+colors.append("green")
+colors.append("red") # l0 = ["blue", "green", "red"]
+user = raw_input("What is your favorite color? ")
+user = user.lower()
+for color in colors:
+  if (user == color):
+    print "I like that color as well!"
+    flag = False;
+print "That's a good color."
+if flag:
+  colors.append(user)
+```
+
+This code might be a lot, so bare with me. This is a different way of doing a `for` loop that I talked about at the beginning of this section on `for` loops. `for` item `in` group is what it means. So `for` every `color` in `colors`, we are going to see if it matches the one the user put in. If it does, we print `I like that color as well!`
+
+At the end, if the color is not in the list of colors, then we add it to that list.
+
+You might be wondering what a list is. That is in the next lecture about data structures. What I say is that it contains information to make groups of info easy to add, edit, access, and remove.
