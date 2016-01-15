@@ -23,7 +23,9 @@ Think about it.
 This is called an _infinite loop_ or a *forever loop*. It will go on forever until your computer's battery runs out or it dies. If this happens in your Python shell, don't worry. Restart the shell or kill Python. To restart the Python shell if you are using Wing 101, go to the window in Wing 101 that has the Python Shell. In the top right corn there is a tab that has the word "options". Click it and the first option is "restart Python". Click it and it will fix your problem. To kill Python, launch your Operating System's task manager and end the task.
 
 To avoid a infinite loop, you must have an _end condition_. That is to say, a condition that is met that causes the loop to end. A while loop is like an if statement: it does not do the task inside of it if the condition is `False`.
+
 ### Examples
+
 The best way of explaining the while loop is to do some examples.
 
 ```py
@@ -205,4 +207,4 @@ This code might be a lot, so bare with me. This is a different way of doing a `f
 
 At the end, if the color is not in the list of colors, then we add it to that list.
 
-You might be wondering what a list is. That is in the next lecture about data structures. What I say is that it contains information to make groups of info easy to add, edit, access, and remove.
+You might be wondering what a list is. That is in the next lecture about data structures. What I say is that it contains information to make groups of info easy to add, edit, access, and remove.f
